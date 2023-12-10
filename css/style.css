@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600&display=swap");
 
+.span {
+    color: var(--second-color);
+}
+
+
+
 .div-container {
     display: grid;
     place-items: center;
@@ -34,6 +40,7 @@
     background-color: transparent;
     border: none;
     animation: bounce 2s infinite;
+    display: none;
 }
 
 .seta:hover {
@@ -54,7 +61,7 @@ body {
 }
 
 .background {
-    background-image: url(../assets/img/Free\ \ Phone\,\ Computer\,\ Notebook\ Background\ Images\,\ Laptop\ Mobile\ Phone\ H5\ Background\ Photo\ Background\ PNG\ and\ Vectors.jpeg);
+    background-image: url(../assets/img/ce51cf02-98ab-47cb-a0c6-1af3b05fad5a.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -347,18 +354,27 @@ img {
     }
 }
 
+.hero_title {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.second-header h2 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
 @media screen and (min-width: 64em) {
     .hero_title {
         font-size: 6.5rem;
-        margin: 0;
+    }
+
+    .seta{
+        display: block;
     }
 
     .second-header h2 {
-        margin: 0;
-    }
-
-    .span {
-        color: var(--second-color);
+        font-size: 2.875rem;
     }
 
     .horizontal-line {
