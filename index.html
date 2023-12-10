@@ -11,17 +11,19 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body>
+<body class="body">
     <div class="background">
-        <div class="content-wrapper-center" id="home">
+        <div class="content-wrapper-center">
             <header class="header">
                 <a href="index.html">
                     <h2><span class="span">P</span>ortfolio</h2>
                 </a>
                 <nav>
-                    <input type="checkbox" class="menu-btn hide" id="menu-btn" />
-                    <label for="menu-btn" class="menu-icon">
-                        <span class="nav-icon"></span>
+                    <label class="bar" for="check">
+                        <input type="checkbox" id="check" />
+                        <span class="top"></span>
+                        <span class="middle"></span>
+                        <span class="bottom"></span>
                     </label>
                     <ul class="header-menu">
                         <li><a href="index.html">Home</a></li>
@@ -38,34 +40,27 @@
                 </nav>
             </header>
             <section class="hero row">
-                <div class="content sm-12 lg-7">
+                <div class="sm-12 lg-7">
                     <header class="second-header">
                         <h1 class="hero_title">Hello<span class="span">.</span></h1>
                         <h2><span class="horizontal-line"></span>I'am Wesley Victor</h2>
-                        <p id="responsiveText">
-                            I am currently enrolled in the technical training program in
-                            Informatics at Senac Guarulhos, with an expected completion date
-                            in February 2024. I highlight my strong experience in C#
-                            development and am excited to apply my knowledge to contribute
-                            and grow professionally in the dynamic field of information
-                            technology.
-                        </p>
+                        <h3 class="title" style="font-weight: 400; font-size: 1.5rem">
+                            Junior Developer with experience in development using the Dot
+                            Net (.NET) platform.
+                        </h3>
                     </header>
                     <button class="btn-cv">
                         <a href="curriculum/Currículo de Wesley Victor Pereira silva.pdf"
                             download="Currículo de Wesley Victor Pereira silva.pdf">Download CV</a>
                     </button>
                 </div>
+                <div class="div-container">
+                    <button class="seta"><a href="#"></a></button>
+                </div>
             </section>
-            <div class="div-container">
-                <button class="seta"><a href="#"></a></button>
-            </div>
         </div>
     </div>
-    <div>
-        <h1 style="color: black;">Hello world</h1>
-    </div>
-    <script src="javascript/script.js"></script>
+    <h1 style="color: black">hello</h1>
 </body>
 
 </html>

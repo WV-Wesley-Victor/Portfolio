@@ -1,16 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600&display=swap");
 
-.span {
-    color: var(--second-color);
-}
-
-
-
-.div-container {
-    display: grid;
-    place-items: center;
-}
-
 @keyframes bounce {
 
     0%,
@@ -18,15 +7,15 @@
     50%,
     80%,
     100% {
-        transform: translateY(0);
+        transform: translateY(-5);
     }
 
     40% {
-        transform: translateY(5px);
+        transform: translateY(-5px);
     }
 
     60% {
-        transform: translateY(-5px);
+        transform: translateY(-7px);
     }
 }
 
@@ -35,17 +24,20 @@
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     background-color: transparent;
     border: none;
     animation: bounce 2s infinite;
-    display: none;
 }
 
 .seta:hover {
     width: 38px;
     height: 38px;
+}
+
+.span {
+    color: var(--second-color);
 }
 
 :root {
@@ -54,7 +46,7 @@
     --second-color-light: rgb(255, 91, 91);
 }
 
-body {
+.body {
     font-family: "Kanit", Arial, Helvetica, sans-serif;
     color: var(--primary-color);
     margin: 0;
@@ -66,8 +58,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
+    height: min-content;
 }
 
 .btn-cv {
@@ -95,34 +87,18 @@ body {
     padding: 2rem 1rem 2rem;
     max-width: 67.25rem;
     margin: auto;
-    min-height: calc(100% - 64px);
+    min-height: 90vh;
+    position: relative;
 }
 
-.imagem {
-    text-align: center;
-}
-
-.hero_title {
-    margin-top: 0;
-}
-
-.header-menu {
-    list-style-type: none;
-    padding: 0;
-    text-align: right;
-    /* display: none; */
-}
-
-.header-menu li {
-    padding: 0.25em 0;
-}
-
-.header-menu li a {
-    text-align: center;
-    padding: 1.75em 0;
-    height: 16px;
-    cursor: pointer;
-    transition: color 0.3s ease;
+.div-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .header-menu li a:hover {
@@ -140,50 +116,6 @@ body {
 a {
     color: var(--primary-color);
     text-decoration: none;
-}
-
-nav a {
-    text-decoration: none;
-}
-
-h1 {
-    font-size: 2.5rem;
-}
-
-h2 {
-    font-size: 2rem;
-}
-
-.header {
-    text-align: left;
-}
-
-.btn {
-    display: inline-block;
-    text-decoration: none;
-    padding: 1em;
-    background-color: var(--second-color);
-    border-radius: 5px;
-    color: var(--light);
-}
-
-.btn:hover,
-.btn:focus {
-    background-color: var(--primary-color-dark);
-}
-
-img {
-    max-width: 100%;
-}
-
-.hide {
-    position: absolute;
-    clip: rect(1px, 1px, 1px, 1px);
-    padding: 0;
-    border: 0;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
 }
 
 .hero {
@@ -221,104 +153,60 @@ img {
     padding-left: 1rem;
 }
 
-@media screen and (min-width: 60em) {
-    .header-menu {
-        position: static;
-        max-height: initial;
-        background-color: initial;
-    }
+input[type="checkbox"] {
+    display: none;
+    visibility: hidden;
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-}
-
-.header-menu {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 100px;
-    max-height: 0;
-    overflow: hidden;
-    background-color: white;
-    transition: max-height 0.3s;
-    margin: 0;
-    padding-right: 1rem;
-    padding-left: 1rem;
-}
-
-.menu-btn:checked~.header-menu {
-    max-height: 100vh;
-}
-
-.menu-btn:checked+.menu-icon .nav-icon {
-    background-color: transparent;
-}
-
-.header-menu:focus-within {
-    max-height: 100vh;
-}
-
-@media screen and (min-width: 60em) {
-    .header-menu {
-        position: static;
-        max-height: initial;
-        background-color: initial;
-    }
-}
-
-.header nav {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-.menu-icon {
+.bar {
+    display: block;
     position: relative;
     cursor: pointer;
-    height: 24px;
-    /* user-select: none; */
+    width: 50px;
+    height: 40px;
 }
 
-.nav-icon {
-    background-color: #333;
-    display: inline-block;
-    height: 2px;
-    width: 24px;
-    position: relative;
-}
-
-.nav-icon::after,
-.nav-icon::before {
-    content: "";
-    background-color: #333;
-    display: inline-block;
-    height: 2px;
-    width: 24px;
+.bar span {
     position: absolute;
-    transition: transform 0.2s;
+    width: 45px;
+    height: 7px;
+    background: #f1faee;
+    border-radius: 100px;
+    display: inline-block;
+    transition: 0.3s ease;
+    left: 0;
 }
 
-.nav-icon::after {
-    transform: translateY(8px);
+.bar span.top {
+    top: 0;
 }
 
-.nav-icon::before {
-    transform: translateY(-8px);
+.bar span.middle {
+    top: 17px;
 }
 
-.menu-btn:checked+.menu-icon .nav-icon::before {
-    transform: rotate(-45deg);
+.bar span.bottom {
+    bottom: 0;
 }
 
-.menu-btn:checked+.menu-icon .nav-icon::after {
+input[type]:checked~span.top {
     transform: rotate(45deg);
+    transform-origin: top left;
+    width: 48px;
+    left: 5px;
 }
 
-.menu-btn:focus-visible+.menu-icon {
-    outline: 2px solid black;
-    outline-offset: 3px;
+input[type]:checked~span.bottom {
+    transform: rotate(-45deg);
+    transform-origin: top left;
+    width: 48px;
+    bottom: -1px;
+    box-shadow: 0 0 10px #495057;
+}
+
+input[type]:checked~span.middle {
+    transform: translateX(-20px);
+    opacity: 0;
 }
 
 @media screen and (min-width: 60em) {
@@ -336,11 +224,6 @@ img {
 
     .header {
         align-items: center;
-    }
-
-    .menu-btn,
-    .menu-icon {
-        display: none;
     }
 
     .header-menu {
@@ -364,13 +247,29 @@ img {
     font-size: 1.8rem;
 }
 
+.horizontal-line {
+    border-bottom: 5px solid var(--second-color);
+    display: none;
+    width: 80px;
+    margin: 0 10px;
+    line-height: 2em;
+    vertical-align: middle;
+}
+
 @media screen and (min-width: 64em) {
-    .hero_title {
-        font-size: 6.5rem;
+    .header-menu {
+        position: static;
+        max-height: initial;
+        background-color: initial;
     }
 
-    .seta{
-        display: block;
+    .bar {
+        display: none;
+        visibility: hidden;
+    }
+
+    .hero_title {
+        font-size: 6.5rem;
     }
 
     .second-header h2 {
@@ -378,12 +277,7 @@ img {
     }
 
     .horizontal-line {
-        border-bottom: 5px solid var(--second-color);
         display: inline-block;
-        width: 80px;
-        margin: 0 10px;
-        line-height: 2em;
-        vertical-align: middle;
     }
 
     .row>.lg-7 {
