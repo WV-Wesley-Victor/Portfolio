@@ -7,9 +7,6 @@
     p = 1.5rem
 */
 
-
-
-
 @keyframes bounce {
 
     0%,
@@ -299,44 +296,58 @@ input[type]:checked~span.middle {
     }
 }
 
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name {
+    margin: 0;
+}
+
+.name h1 {
+    margin: 0;
+}
+
 h1.hero_title {
-    font-size: 5rem;
-    margin: 1rem 0;
+    font-size: 5.5rem;
+    margin: 0rem 0 1rem;
     font-weight: bold;
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin: 1rem 0;
     font-weight: bold;
 }
 
 h2.sub-title {
-    font-size: 2rem;
+    font-size: 2.1rem;
     margin: 1rem 0;
     font-weight: bold;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin: 1rem 0;
     font-weight: bold;
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin: 1rem 0;
     font-weight: 400;
 }
 
-p{
-    font-size: 1rem;
+p {
+    font-size: 1.2rem;
     margin: 1rem 0;
     font-weight: 400;
 }
 
 a {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin: 1rem 0;
     font-weight: 400;
 }
