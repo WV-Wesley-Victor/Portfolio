@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600&display=swap");
 
+
 @keyframes bounce {
 
     0%,
@@ -153,6 +154,21 @@ a {
     padding-left: 1rem;
 }
 
+/* .header-menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.nav input[type="checkbox"]:checked + .header-menu {
+    max-height: 200px; /* ajuste conforme necessário */
+/* }
+
+.show-menu {
+    overflow: visible;
+}
+ */ 
+
 input[type="checkbox"] {
     display: none;
     visibility: hidden;
@@ -208,6 +224,7 @@ input[type]:checked~span.middle {
     transform: translateX(-20px);
     opacity: 0;
 }
+
 
 @media screen and (min-width: 60em) {
     body {
