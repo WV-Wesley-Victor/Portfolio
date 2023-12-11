@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600&display=swap");
 
-
 @keyframes bounce {
 
     0%,
@@ -33,8 +32,7 @@
 }
 
 .seta:hover {
-    width: 38px;
-    height: 38px;
+    transform: scale(1.2); /* Ajuste o valor conforme necessário para o efeito desejado */
 }
 
 .span {
@@ -54,7 +52,7 @@
 }
 
 .background {
-    background-image: url(../assets/img/ce51cf02-98ab-47cb-a0c6-1af3b05fad5a.jpg);
+    background-image: url(../assets/img/Design\ sem\ nome.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -82,6 +80,10 @@
 
 .btn-cv:hover {
     background-position: right top;
+}
+
+.btn-cv-second{
+    margin: 1.5rem 0 0;
 }
 
 .content-wrapper-center {
@@ -129,10 +131,12 @@ a {
     grid-template-columns: repeat(12, 1fr);
     gap: 0.5rem;
     grid-auto-flow: dense;
+    margin: 0;
 }
 
 .row>.sm-12 {
     grid-column: 1 / -1;
+    text-align: center;
 }
 
 .header {
@@ -273,11 +277,62 @@ input[type]:checked~span.middle {
     vertical-align: middle;
 }
 
+
+.hero-redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+}
+
+.hero-redes ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.hero-redes img {
+    width: 2rem;
+    height: 2rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hero-redes img:hover {
+    transform: scale(1.2);
+}
+
+
+
+
+
+h1.hero_title {
+    /* font-size: 5.5rem; */
+    font-size: 4rem;
+    margin: 1rem 0;
+    font-weight: bold;
+}
+
 @media screen and (min-width: 64em) {
+    h1.hero_title {
+        /* font-size: 5.5rem; */
+        font-size: 5rem;
+    }
+    
+    .row>.sm-12 {
+        grid-column: 1 / -1;
+        text-align: left;
+    }
+    
+
     .header-menu {
         position: static;
         max-height: initial;
         background-color: initial;
+    }
+
+    .row {
+        margin: 3rem 0;
     }
 
     .bar {
@@ -301,10 +356,31 @@ input[type]:checked~span.middle {
         grid-column: span 7;
     }
 
+    .row>.lg-5 {
+        grid-column: span 5;
+    }
+
     .background {
         background-image: url(../assets/img/ce51cf02-98ab-47cb-a0c6-1af3b05fad5a.jpg);
     }
+
+    .hero-redes {
+        flex-direction: column;
+        align-items: end;
+        margin: 0;
+    }
+    
+    .hero-redes ul {
+        flex-direction: column;
+        padding: 1rem;
+    }    
 }
+
+
+
+
+
+
 
 .nav {
     display: flex;
@@ -316,15 +392,11 @@ input[type]:checked~span.middle {
     margin: 0;
 }
 
-.name h1 {
+.name h2 {
     margin: 0;
 }
 
-h1.hero_title {
-    font-size: 5.5rem;
-    margin: 0rem 0 1rem;
-    font-weight: bold;
-}
+
 
 h1 {
     font-size: 3rem;
@@ -346,7 +418,7 @@ h2 {
 
 h3 {
     font-size: 2rem;
-    margin: 1rem 0;
+    margin: 1.5rem 0;
     font-weight: 400;
 }
 
@@ -360,4 +432,16 @@ a {
     font-size: 1.2rem;
     margin: 1rem 0;
     font-weight: 400;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0 0 0 10px;
+    margin: 0;
+}
+
+li {
+    display: inline-block;
+    margin-right: 10px;
 }
