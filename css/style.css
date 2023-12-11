@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600&display=swap");
 
+/* 
+    h1 = 3rem
+    h2 = 2.5rem
+    h3 = 2rem
+    p = 1.5rem
+*/
+
+
+
+
 @keyframes bounce {
 
     0%,
@@ -109,9 +119,9 @@
     color: var(--primary-color);
 }
 
-.header a h2 {
+/* .header a h2 {
     margin: 0;
-}
+} */
 
 a {
     color: var(--primary-color);
@@ -237,15 +247,15 @@ input[type]:checked~span.middle {
     }
 }
 
-.hero_title {
+/* .hero_title {
     font-size: 4rem;
     margin: 0;
-}
+} */
 
-.second-header h2 {
+/* .second-header h2 {
     margin: 0;
     font-size: 1.8rem;
-}
+} */
 
 .horizontal-line {
     border-bottom: 5px solid var(--second-color);
@@ -287,4 +297,46 @@ input[type]:checked~span.middle {
     .background {
         background-image: url(../assets/img/ce51cf02-98ab-47cb-a0c6-1af3b05fad5a.jpg);
     }
+}
+
+h1.hero_title {
+    font-size: 5rem;
+    margin: 1rem 0;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    font-weight: bold;
+}
+
+h2.sub-title {
+    font-size: 2rem;
+    margin: 1rem 0;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 1rem 0;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    font-weight: 400;
+}
+
+p{
+    font-size: 1rem;
+    margin: 1rem 0;
+    font-weight: 400;
+}
+
+a {
+    font-size: 1rem;
+    margin: 1rem 0;
+    font-weight: 400;
 }
