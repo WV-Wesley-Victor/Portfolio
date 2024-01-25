@@ -29,6 +29,7 @@
     background-color: transparent;
     border: none;
     animation: bounce 2s infinite;
+    cursor: pointer;
 }
 
 .seta:hover {
@@ -144,7 +145,7 @@ a {
 .header-menu {
     position: absolute;
     right: 0;
-    top: 80px;
+    top: 100px;
     overflow: hidden;
     background-color: white;
     transition: max-height 0.3s;
@@ -308,7 +309,21 @@ h1.hero_title {
     font-weight: bold;
 }
 
-@media screen and (min-width: 64em) {
+.header-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    padding-bottom: 5px;
+    gap: 15px;
+}
+
+.header-footer a:hover {
+    color: rgb(175, 174, 174);
+}
+
+@media screen and (min-width: 800px) {
     h1.hero_title {
         font-size: 5rem;
     }
@@ -379,6 +394,15 @@ h1.hero_title {
         flex-direction: column;
         padding: 1rem;
     }
+
+    .redes-footer ul {
+        flex-direction: row;
+    }
+
+    .header-footer {
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 .name {
@@ -438,22 +462,57 @@ li {
 }
 
 .footer {
-    background-color: #181818;
+    background-color: rgb(34, 34, 34);
     height: auto;
     text-align: center;
-    padding: 50px 40px 30px;
-}
-
-.header-footer {
+    padding: 20px 40px 20px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0;
-    padding-bottom: 10px;
-    gap: 10px;
+    flex-direction: column;
 }
 
-.header-footer a:hover{
-    color: rgb(175, 174, 174);
+.direitos {
+    margin: 40px 0 10px;
+}
+
+.centro {
+    padding: 30px 80px 0;
+}
+
+#about {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    height: min-content;
+}
+
+.imagem-wesley img {
+    width: 375px;
+    height: 475px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.left-about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 100px;
+}
+
+.right-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wave {
+    background-color: #222222;
+    display: block;
+}
+
+html {
+    scroll-behavior: smooth;
 }

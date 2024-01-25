@@ -1,12 +1,7 @@
 1 - Sobre Mim:
-Uma seção que destaca suas habilidades, experiência e o que o torna 
-único.
+o que o torna único.
 Seus objetivos e interesses profissionais.
-
-2 - Educação:
+formação tecnica.
 Informações sobre sua formação acadêmica, cursos relevantes e 
 certificações.
-
-3 - Habilidades Técnicas:
-Lista de suas habilidades técnicas, destacando as mais relevantes 
-para a função que você está buscando.
+Uma seção que destaca suas habilidades

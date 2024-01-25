@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Wesley Victor Pereira Silva" />
     <meta name="description" content="My personal portfolio" />
     <meta name="keywords" content="portfolio, projects, skills, resume, development, programming" />
@@ -27,7 +27,7 @@
                     </label>
                     <ul class="header-menu">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="#about">About</a></li>
                         <li><a href="projects.html">Projects</a></li>
                         <li><a href="#">Contact</a></li>
                         <li>
@@ -73,21 +73,71 @@
                     </ul>
                 </div>
                 <div class="div-container">
-                    <button class="seta"><a href="#"></a></button>
+                    <a class="seta" href="#about"></a>
                 </div>
             </section>
         </div>
     </div>
+    <main>
+        <section class="centro" id="about">
+            <div class="left-about">
+                <h1>Wesley Victor</h1>
+                <h2>Desenvolvedor de sistemas</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
+                    corrupti deleniti incidunt, eligendi perferendis dolorum.
+                    Perspiciatis porro voluptate eligendi similique, eveniet vel fugiat,
+                    alias aspernatur amet sapiente aliquam molestias mollitia! Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Ratione eum
+                    accusantium inventore repellat debitis quae voluptates ipsam,
+                    suscipit esse animi quod, iure nam totam aliquid perspiciatis?
+                    Laborum iste nam unde.
+                </p>
+            </div>
+            <div class="right-about">
+                <div class="imagem-wesley">
+                    <img src="assets/img/wesley.jpg" alt="Wesley Victor" />
+                </div>
+            </div>
+        </section>
+    </main>
+    <svg class="wave" viewBox="0 0 1356 150" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+        <path fill="rgba(255, 255, 255, 1)"
+            d="M 0 19 C 231.20000000000002 19 346.79999999999995 116 578 116 L 578 116 L 578 0 L 0 0 Z"
+            stroke-width="0"></path>
+        <path fill="rgba(255, 255, 255, 1)" d="M 577 116 C 888.6 116 1044.4 26 1356 26 L 1356 26 L 1356 0 L 577 0 Z"
+            stroke-width="0"></path>
+    </svg>
+
     <footer class="footer">
+        <div class="hero-redes redes-footer">
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/wesley_vt1/" target="_blank"><img
+                            src="assets/icons/instagram.png" alt="Instagram" /></a>
+                </li>
+                <li>
+                    <a href="https://github.com/WV-Wesley-Victor" target="_blank"><img
+                            src="assets/icons/githubgenericname.png" alt="GitHub" /></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/wesley-victor-750615286/" target="_blank"><img
+                            src="assets/icons/linkedin.png" alt="Linkedin" /></a>
+                </li>
+            </ul>
+        </div>
         <nav class="nav">
             <ul class="header-footer">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
-        <p>&copy; 2024 Portfolio. Todos os direitos reservados.</p>
+        <p class="direitos">
+            &copy; 2024 Portfolio. Todos os direitos reservados.
+        </p>
     </footer>
     <script src="javascript/script.js"></script>
 </body>
