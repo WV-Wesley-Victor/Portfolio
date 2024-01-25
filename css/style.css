@@ -87,7 +87,7 @@
 }
 
 .content-wrapper-center {
-    padding: 2rem 1rem 2rem;
+    padding: 50px 40px 50px;
     max-width: 67.25rem;
     margin: auto;
     min-height: 90vh;
@@ -138,6 +138,7 @@ a {
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header-menu {
@@ -380,12 +381,6 @@ h1.hero_title {
     }
 }
 
-.nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .name {
     margin: 0;
 }
@@ -440,4 +435,25 @@ ul {
 li {
     display: inline-block;
     margin-right: 10px;
+}
+
+.footer {
+    background-color: #181818;
+    height: auto;
+    text-align: center;
+    padding: 50px 40px 30px;
+}
+
+.header-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    padding-bottom: 10px;
+    gap: 10px;
+}
+
+.header-footer a:hover{
+    color: rgb(175, 174, 174);
 }
