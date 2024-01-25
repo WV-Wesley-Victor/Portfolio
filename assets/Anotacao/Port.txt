@@ -1,0 +1,32 @@
+1 - Página Inicial (Homepage):
+Uma introdução breve sobre você.
+Uma foto profissional (opcional, mas pode adicionar um toque pessoal).
+
+2 - Sobre Mim:
+Uma seção que destaca suas habilidades, experiência e o que o torna 
+único.
+Seus objetivos e interesses profissionais.
+
+3 - Projetos:
+Descrições detalhadas de projetos que você concluiu.
+Capturas de tela, links ou demonstrações ao vivo dos projetos.
+Tecnologias utilizadas em cada projeto.
+Problemas encontrados e soluções implementadas.
+
+4 - Educação:
+Informações sobre sua formação acadêmica, cursos relevantes e 
+certificações.
+
+5 - Habilidades Técnicas:
+Lista de suas habilidades técnicas, destacando as mais relevantes 
+para a função que você está buscando.
+
+6 - Contato:
+Informações de contato, como endereço de e-mail ou links para redes 
+sociais.
+Certifique-se de que é fácil para as pessoas entrarem em contato com 
+você.
+
+7 - Seu currículo: 
+Seu currículo é uma ótima maneira de fornecer mais informações sobre 
+suas habilidades e experiência.
