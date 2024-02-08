@@ -465,7 +465,7 @@ li {
     background-color: rgb(34, 34, 34);
     height: auto;
     text-align: center;
-    padding: 20px 40px 20px;
+    padding: 40px 40px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -541,12 +541,79 @@ html {
 }
 
 .skills {
-    height: 100vh;
+    height: min-content;
     background-color: #222222;
+    padding-bottom: 50px;
 }
 
 .skills-title {
     font-weight: normal;
     margin: 0;
     text-align: center;
+}
+
+.skill {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    width: 17vw;
+    height: 220px;
+    border-radius: 30px;
+    background: #222222;
+    box-shadow: 5px 5px 10px rgb(25, 25, 25),
+                -5px -5px 10px rgb(60, 60, 60);
+    position: relative; /* Adicionada a propriedade position */
+    overflow: hidden; /* Para esconder partes da imagem que se estendem além da div */
+    transition: all .3s;
+}
+
+.card:hover {
+    box-shadow: 10px 10px 20px rgb(25, 25, 25),
+                -10px -10px 20px rgb(60, 60, 60);
+    margin-top: -10px;
+}
+
+.card img {
+    width: 110px;
+    height: 110px;
+    position: absolute; /* Adicionada a propriedade position */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centraliza a imagem */
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.card:hover img {
+    opacity: 0;
+}
+
+.card p {
+    opacity: 0;
+    margin: 0;
+    transition: opacity 0.3s;
+}
+
+.card:hover p {
+    opacity: 1;
+}
+
+.card h2 {
+    opacity: 0;
+    margin: 0;
+    font-weight: normal;
+    transition: opacity 0.3s;
+}
+
+.card:hover h2 {
+    opacity: 1;
 }
