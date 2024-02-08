@@ -491,6 +491,7 @@ li {
     width: 375px;
     height: 460px;
     object-fit: cover;
+    border-radius: 13px;
 }
 
 .left-about {
@@ -502,9 +503,19 @@ li {
 
 .left-about h2 {
     font-weight: normal;
+    margin:30px 0 0 0;
+    text-align: center;
 }
+
 .left-about h1 {
     font-weight: normal;
+    margin: 0;
+    text-align: center;
+}
+
+.left-about p {
+    font-weight: normal;
+    text-align: center;
 }
 
 .right-about {
@@ -523,4 +534,19 @@ html {
     scroll-behavior: smooth;
 }
 
-/* teste */
+.line-edit {
+    width: 70px;
+    border-bottom: 3px solid #960018;
+    margin: 0;
+}
+
+.skills {
+    height: 100vh;
+    background-color: #222222;
+}
+
+.skills-title {
+    font-weight: normal;
+    margin: 0;
+    text-align: center;
+}
