@@ -171,12 +171,12 @@ a {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 2rem 0 2rem 1rem;
     text-align: center;
-    background-color: #181818;
+    background-color: #222222;
     border-radius: 20px 0 0 20px;
     width: 50%;
-    box-shadow: -10px 10px 10px black;
+    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.455);
 }
 
 .header-menu li a {
@@ -477,7 +477,7 @@ li {
 }
 
 .centro {
-    padding: 30px 80px 0;
+    padding: 50px 40px;
 }
 
 #about {
@@ -501,7 +501,7 @@ li {
 }
 
 .imagem-wesley:hover {
-    margin-top: -10px;
+    transform: translateY(-10px);
 }
 
 .left-about {
@@ -544,12 +544,6 @@ html {
     scroll-behavior: smooth;
 }
 
-.line-edit {
-    width: 70px;
-    border-bottom: 3px solid #960018;
-    margin: 0;
-}
-
 .skills {
     height: min-content;
     background-color: #222222;
@@ -590,7 +584,7 @@ html {
 
 .card:hover {
     box-shadow: 10px 10px 20px rgb(25, 25, 25), -10px -10px 20px rgb(60, 60, 60);
-    margin-top: -10px;
+    transform: translateY(-10px);
 }
 
 .card img {
@@ -657,7 +651,6 @@ html {
     transform: scale(1.3);
 }
 
-
 html {
     scroll-behavior: smooth;
 }
@@ -675,9 +668,12 @@ html {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Ajuste a opacidade conforme necessário */
+    background-color: rgba(0,
+            0,
+            0,
+            0.5);
+    /* Ajuste a opacidade conforme necessário */
 }
-
 
 .projects h1 {
     font-weight: normal;
@@ -689,4 +685,111 @@ html {
     width: 750px;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media screen and (max-width: 900px) {
+    #about {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 40px;
+    }
+
+    .left-about {
+        padding: 0;
+    }
+
+    .left-about h2 {
+        margin-top: 20px;
+        font-size: 32px;
+    }
+
+    .left-about h1 {
+        font-size: 33.6px;
+        font-weight: bold;
+    }
+
+    .skills-text {
+        width: 100%;
+        margin: 0;
+    }
+
+    .skill {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .skill .card {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .imagem-wesley img {
+        width: 270px;
+        height: 350px;
+    }
+}
+
+.skill {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.skill .card {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.skills-text {
+    margin-bottom: 3rem;
+}
+
+
+@media screen and (max-width: 365px) {
+    h1.hero_title {
+        font-size: 40px;
+    }
+
+    h1.skills-title {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+   .imagem-wesley img {
+    width: 200px;
+    height: 250px;
+   }
+
+   .skill .card {
+    width: 70%;
+    height: 300px;
+   }
+
+   .show-menu {
+    padding: 2rem 1rem 2rem 2rem;
+   }
+
+   .content-wrapper-center {
+    padding: 50px 30px;
+   }
+
+   .centro {
+    padding: 50px 30px;
+   }
+
+   #about {
+    padding: 50px 30px;
+   }
+
+   .footer {
+    padding: 40px 30px;
+   }
 }
