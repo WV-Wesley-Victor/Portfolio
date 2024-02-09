@@ -490,10 +490,10 @@ li {
 }
 
 .imagem-wesley img {
-    width: 400px;
-    height: 400px;
+    width: 375px;
+    height: 450px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 15px;
 }
 
 .imagem-wesley {
@@ -814,4 +814,3 @@ html {
         margin-top: 0;
     }
 }
-

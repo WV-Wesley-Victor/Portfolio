@@ -9,26 +9,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function voltarAoTopo() {
   window.scrollTo({
-      top: 0,
-      behavior: "smooth",
+    top: 0,
+    behavior: "smooth",
   });
 }
 
 function toggleButtonDisplay() {
   const btnTopo = document.getElementById("btnTopo");
   const scrollTop =
-      document.documentElement.scrollTop || document.body.scrollTop;
+    document.documentElement.scrollTop || document.body.scrollTop;
 
   if (scrollTop > 20) {
-      btnTopo.style.display = "block";
-      btnTopo.style.opacity = "1";
+    btnTopo.style.display = "block";
+    btnTopo.style.opacity = "1";
   } else {
-      btnTopo.style.opacity = "0";
-      setTimeout(() => {
-          if (btnTopo.style.opacity === "0") {
-              btnTopo.style.display = "none";
-          }
-      }, 300);
+    btnTopo.style.opacity = "0";
+    setTimeout(() => {
+      if (btnTopo.style.opacity === "0") {
+        btnTopo.style.display = "none";
+      }
+    }, 300);
   }
 }
 
