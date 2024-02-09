@@ -484,14 +484,24 @@ li {
     display: flex;
     background-color: rgb(255, 255, 255);
     color: black;
-    height: min-content;
+    min-height: 100vh;
+    max-height: min-content;
+    padding-top: 0;
 }
 
 .imagem-wesley img {
     width: 375px;
-    height: 460px;
+    height: 450px;
     object-fit: cover;
-    border-radius: 13px;
+    border-radius: 15px;
+}
+
+.imagem-wesley {
+    transition: all 0.5s;
+}
+
+.imagem-wesley:hover {
+    margin-top: -10px;
 }
 
 .left-about {
@@ -543,7 +553,8 @@ html {
 .skills {
     height: min-content;
     background-color: #222222;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
+    padding-top: 70px;
 }
 
 .skills-title {
@@ -652,10 +663,30 @@ html {
 }
 
 .projects {
+    position: relative;
     color: black;
     text-align: center;
 }
 
+.projects::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajuste a opacidade conforme necessário */
+}
+
+
 .projects h1 {
     font-weight: normal;
+    margin: 0;
+}
+
+.skills-text {
+    text-align: center;
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
 }
