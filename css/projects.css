@@ -1,0 +1,47 @@
+:root {
+    --color-primary: #072d44;
+    --color-second: #064469;
+    --color-light-second: #5790ab;
+}
+
+.background {
+    position: relative;
+    background-image: url(../assets/img/ee8b95e6e1d3fba80956fdf63daec013.jpg);
+}
+
+.background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,
+            0,
+            0,
+            0.1);
+}
+
+.span {
+    color: var(--color-second);
+}
+
+.horizontal-line {
+    border-bottom: 5px solid var(--color-second);
+}
+
+.btn-cv {
+    background-image: linear-gradient(325deg, var(--color-second) 0%, var(--color-light-second) 55%, var(--color-second) 90%);
+}
+
+.header-menu li a:hover {
+    color: var(--color-second);
+}
+
+.header-footer li a:hover {
+    color: var(--color-second);
+}
+
+.footer {
+    background-color: rgb(0, 0, 0);
+}
