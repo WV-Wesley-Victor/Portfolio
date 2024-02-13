@@ -42,8 +42,12 @@
 
 :root {
     --primary-color: white;
-    --second-color: #960018;
-    --second-color-light: #bc4c46;
+    --second-color:   #c98860;
+    --second-color-light:  #9b6b43;
+    --color-dark: #744c24;
+    --color-dark-light: #8e5431;
+    --color: #efcead;
+    --color-light: #f3e3d3;
 }
 
 .body {
@@ -53,13 +57,27 @@
 }
 
 .background {
-    background-image: url(../assets/img/Design\ sem\ nome.png);
+    position: relative;
+    background-image: url(../assets/img/ai-generated-8316335.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
     min-height: 100vh;
     height: min-content;
+}
+
+.background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,
+            0,
+            0,
+            0.3);
 }
 
 .btn-cv {
@@ -106,7 +124,7 @@
 }
 
 .header-menu li a:hover {
-    color: rgb(175, 174, 174);
+    color: var(--second-color);
 }
 
 .header-menu li button a:hover {
@@ -381,7 +399,21 @@ h1.hero_title {
     }
 
     .background {
-        background-image: url(../assets/img/ce51cf02-98ab-47cb-a0c6-1af3b05fad5a.jpg);
+        position: relative;
+        background-image: url(../assets/img/ai-generated-8316335.png);
+    }
+    
+    .background::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0,
+                0,
+                0,
+                0.3);
     }
 
     .hero-redes {
@@ -484,9 +516,9 @@ li {
     display: flex;
     background-color: rgb(255, 255, 255);
     color: black;
-    min-height: 100vh;
-    max-height: min-content;
+   
     padding-top: 0;
+    height: min-content;
 }
 
 .imagem-wesley img {
@@ -509,23 +541,19 @@ li {
     justify-content: center;
     flex-direction: column;
     padding-right: 100px;
-}
-
-.left-about h2 {
-    font-weight: normal;
-    margin: 30px 0 0 0;
-    text-align: center;
+    height: min-content;
 }
 
 .left-about h1 {
     font-weight: normal;
-    margin: 0;
-    text-align: center;
+    margin: 30px 0 0 0;
+    text-align: start;
 }
 
-.left-about p {
+.left-about h2 {
     font-weight: normal;
-    text-align: center;
+    margin: 0;
+    text-align: start;
 }
 
 .right-about {
@@ -727,6 +755,7 @@ html {
     .imagem-wesley img {
         width: 270px;
         height: 350px;
+        border-radius: 15px;
     }
 }
 
@@ -804,13 +833,81 @@ html {
         max-width: 700px;
         width: 100%;
         margin: 10px auto 30px;
+        text-align: center;
     }
 
     .left-about h1 {
-        margin-top: 50px;
+        margin: 0;
+        text-align: center;
     }
 
     .left-about h2 {
         margin-top: 0;
+        text-align: center;
+    }
+
+    span.about-style {
+        margin: 0;
+    }
+
+    span.second-about-style {
+        margin: 20px 0 50px;
+    }
+
+    section#about.centro {
+        padding: 0 40px;
     }
 }
+
+.about-top {
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+}
+
+.about-top h1 {
+    font-weight: normal;
+    margin: 0;
+}
+
+.about-style {
+    border-bottom: 40px solid var(--color-dark-light);
+    display: inline-block;
+    width: 4px;
+    margin: 0 10px 20px;
+    line-height: 2em;
+    vertical-align: middle;
+}
+
+.main {
+    background-color: var(--second-color);
+}
+
+#about {
+    background-color: var(--second-color);
+    color: white;
+}
+
+#about.centro {
+    padding: 0px 100px;
+}
+
+.left-about-me {
+    color: var(--color-dark);
+}
+
+.style {
+    display: flex;
+  justify-content: center; /* Alinha horizontalmente ao centro */
+  align-items: center; /* Alinha verticalmente ao centro */
+}
+
+.second-about-style {
+    border-bottom: 40px solid var(--color-dark-light); /* ou outra cor desejada */
+    display: inline-block;
+    width: 4px;
+    margin: 0 10px 45px;
+    line-height: 2em;
+    vertical-align: middle;
+}
+  
