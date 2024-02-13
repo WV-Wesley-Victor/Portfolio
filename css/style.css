@@ -42,8 +42,8 @@
 
 :root {
     --primary-color: white;
-    --second-color:   #c98860;
-    --second-color-light:  #9b6b43;
+    --second-color: #c98860;
+    --second-color-light: #9b6b43;
     --color-dark: #744c24;
     --color-dark-light: #8e5431;
     --color: #efcead;
@@ -74,10 +74,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0,
-            0,
-            0,
-            0.3);
+    background: rgba(0, 0, 0, 0.3);
 }
 
 .btn-cv {
@@ -191,10 +188,10 @@ a {
     align-items: center;
     padding: 2rem 0 2rem 1rem;
     text-align: center;
-    background-color: #222222;
+    background-color: var(--color-dark-light);
     border-radius: 20px 0 0 20px;
     width: 50%;
-    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.455);
+    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 .header-menu li a {
@@ -338,7 +335,7 @@ h1.hero_title {
 }
 
 .header-footer a:hover {
-    color: rgb(175, 174, 174);
+    color: var(--second-color);
 }
 
 @media screen and (min-width: 800px) {
@@ -402,7 +399,7 @@ h1.hero_title {
         position: relative;
         background-image: url(../assets/img/ai-generated-8316335.png);
     }
-    
+
     .background::before {
         content: "";
         position: absolute;
@@ -410,10 +407,7 @@ h1.hero_title {
         right: 0;
         bottom: 0;
         left: 0;
-        background: rgba(0,
-                0,
-                0,
-                0.3);
+        background: rgba(0, 0, 0, 0.3);
     }
 
     .hero-redes {
@@ -494,7 +488,7 @@ li {
 }
 
 .footer {
-    background-color: rgb(34, 34, 34);
+    background-color: var(--color-dark-light);
     height: auto;
     text-align: center;
     padding: 40px 40px 20px;
@@ -516,7 +510,7 @@ li {
     display: flex;
     background-color: rgb(255, 255, 255);
     color: black;
-   
+
     padding-top: 0;
     height: min-content;
 }
@@ -563,18 +557,13 @@ li {
     flex-direction: column;
 }
 
-.wave {
-    background-color: #222222;
-    display: block;
-}
-
 html {
     scroll-behavior: smooth;
 }
 
 .skills {
     height: min-content;
-    background-color: #222222;
+    background-color: var(--color-dark-light);
     padding-bottom: 30px;
     padding-top: 70px;
 }
@@ -601,8 +590,8 @@ html {
     width: 17vw;
     height: 220px;
     border-radius: 30px;
-    background: #222222;
-    box-shadow: 5px 5px 10px rgb(25, 25, 25), -5px -5px 10px rgb(60, 60, 60);
+    background: var(--color-dark-light);
+    box-shadow: 5px 5px 10px #56341f, -5px -5px 10px #936243;
     position: relative;
     /* Adicionada a propriedade position */
     overflow: hidden;
@@ -611,7 +600,7 @@ html {
 }
 
 .card:hover {
-    box-shadow: 10px 10px 20px rgb(25, 25, 25), -10px -10px 20px rgb(60, 60, 60);
+    box-shadow: 10px 10px 20px #56341f, -10px -10px 20px #936243;
     transform: translateY(-10px);
 }
 
@@ -657,7 +646,7 @@ html {
     width: 45px;
     height: 45px;
     border-radius: 50%;
-    background-color: #121212;
+    background-color: #442918;
     border: none;
     cursor: pointer;
     position: fixed;
@@ -898,16 +887,18 @@ html {
 
 .style {
     display: flex;
-  justify-content: center; /* Alinha horizontalmente ao centro */
-  align-items: center; /* Alinha verticalmente ao centro */
+    justify-content: center;
+    /* Alinha horizontalmente ao centro */
+    align-items: center;
+    /* Alinha verticalmente ao centro */
 }
 
 .second-about-style {
-    border-bottom: 40px solid var(--color-dark-light); /* ou outra cor desejada */
+    border-bottom: 40px solid var(--color-dark-light);
+    /* ou outra cor desejada */
     display: inline-block;
     width: 4px;
     margin: 0 10px 45px;
     line-height: 2em;
     vertical-align: middle;
 }
-  
