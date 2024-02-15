@@ -33,3 +33,10 @@ function toggleButtonDisplay() {
 }
 
 window.addEventListener("scroll", toggleButtonDisplay);
+
+function redirectToGitHub() {
+  window.open(
+    "https://github.com/WV-Wesley-Victor/Projeto-Click-Producoes",
+    "_blank"
+  );
+}

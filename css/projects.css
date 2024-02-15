@@ -1,7 +1,9 @@
 :root {
-    --color-primary: #072d44;
-    --color-second: #064469;
-    --color-light-second: #5790ab;
+    --primary-color: white;
+    --second-color: #5790ab;
+    --second-color-light: #064469;
+    --color-dark-light: #072d44;
+    --color-dark: #062132;
 }
 
 .background {
@@ -16,32 +18,257 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0,
-            0,
-            0,
-            0.2);
+    background: rgba(0, 0, 0, 0.2);
 }
 
 .span {
-    color: var(--color-second);
+    color: var(--second-color-light);
 }
 
 .horizontal-line {
-    border-bottom: 5px solid var(--color-second);
+    border-bottom: 5px solid var(--second-color-light);
 }
 
 .btn-cv {
-    background-image: linear-gradient(325deg, var(--color-second) 0%, var(--color-light-second) 55%, var(--color-second) 90%);
+    background-image: linear-gradient(325deg,
+            var(--second-color-light) 0%,
+            var(--second-color) 55%,
+            var(--second-color-light) 90%);
 }
 
 .header-menu li a:hover {
-    color: var(--color-second);
+    color: var(--second-color-light);
 }
 
 .header-footer li a:hover {
-    color: var(--color-second);
+    color: var(--second-color-light);
 }
 
 .footer {
-    background-color: rgb(0, 0, 0);
+    background-color: var(--color-dark);
+}
+
+.section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(442px, 1fr));
+}
+
+.left-project,
+.right-project,
+.progress {
+    height: 450px;
+    background-color: #062132;
+}
+
+.left-project {
+    padding: 50px 30px 50px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.project-title {
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.right-project {
+    padding: 50px 100px 50px 30px;
+}
+
+.second-color {
+    background-color: var(--second-color);
+}
+
+#btnTopo {
+    background-color: #031018;
+}
+
+.button {
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    gap: 15px;
+    background-color: #031018;
+    outline-offset: -3px;
+    border-radius: 0.2rem;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+    padding: 1rem;
+}
+
+.button .text {
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+    transition: 400ms;
+}
+
+.button svg path {
+    transition: 400ms;
+}
+
+.button:hover {
+    background-color: white;
+}
+
+.button:hover .text {
+    color: #181717;
+}
+
+.button:hover svg path {
+    fill: #181717;
+}
+
+.progress {
+    padding: 50px 100px;
+}
+
+.line {
+    border-bottom: 5px solid #031018;
+    display: inline-block;
+    width: 50px;
+    vertical-align: middle;
+}
+
+.right-project {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+.video video {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 1091px) {
+    .project-title {
+        margin: 0;
+    }
+
+    .left-project {
+        padding: 50px 30px 50px 40px;
+    }
+
+    .right-project {
+        padding: 50px 40px 50px 30px;
+    }
+}
+
+@media screen and (max-width: 1066px) {
+    .left-project {
+        padding: 50px 20px 50px 40px;
+    }
+
+    .right-project {
+        padding: 50px 40px 50px 20px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .project-title {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .description-project {
+        margin: 10px 0;
+    }
+
+    .project-title {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .left-project {
+        padding: 50px 40px 30px;
+        justify-content: start;
+        height: min-content;
+    }
+
+    .right-project {
+        padding: 0 40px 50px;
+        justify-content: start;
+        height: min-content;
+    }
+
+    .project-title {
+        margin: 20px 0;
+        font-size: 40px;
+    }
+
+    .description-project {
+        margin: 20px 0;
+    }
+
+    .section {
+        grid-template-columns: 1fr;
+    }
+
+    .order-2 {
+        order: 2;
+        padding: 0 40px 50px;
+    }
+
+    .order-1 {
+        order: 1;
+        padding: 50px 40px 30px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .left-project {
+        padding: 50px 30px 30px;
+    }
+
+    .right-project {
+        padding: 0 30px 50px;
+    }
+
+    .order-2 {
+        order: 2;
+        padding: 0 30px 50px;
+    }
+
+    .order-1 {
+        order: 1;
+        padding: 50px 30px 30px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .project-title {
+        font-size: 30px;
+    }
+
+    .left-project {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .right-project {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .order-1 {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .order-2 {
+        justify-content: center;
+        align-items: center;
+    }
 }
