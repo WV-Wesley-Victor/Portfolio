@@ -311,9 +311,6 @@
     transform-origin: center center;
     box-shadow: inset 2px -10px 0px rgba(0, 0, 0, 0.1);
     animation: planet 5s ease infinite alternate;
-    /* planet ring */
-    /* to cover the back of the ring */
-    /* planet spots */
 }
 
 @keyframes planet {
@@ -339,8 +336,6 @@
     box-shadow: 2px -10px 0px rgba(0, 0, 0, 0.1),
         inset -5px -10px 0px rgba(0, 0, 0, 0.1);
     animation: ring 3s ease infinite;
-    /* small ball */
-    /* inner ring */
 }
 
 @keyframes ring {
