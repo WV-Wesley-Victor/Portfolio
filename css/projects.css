@@ -158,6 +158,12 @@
     border-radius: 15px;
 }
 
+.video img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
 @media screen and (max-width: 1091px) {
     .project-title {
         margin: 0;

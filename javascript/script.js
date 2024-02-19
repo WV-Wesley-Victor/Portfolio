@@ -40,3 +40,10 @@ function redirectToGitHub() {
     "_blank"
   );
 }
+
+function redirectToRepository() {
+  window.open(
+    "https://github.com/WV-Wesley-Victor/The-Complete-2024-Web-Development-Bootcamp",
+    "_blank"
+  );
+}
