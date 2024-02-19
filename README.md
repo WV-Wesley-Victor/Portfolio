@@ -1,6 +1,7 @@
 # Portfolio
 Welcome to my Portfolio. This repository on GitHub is a collection of the projects I have developed, highlighting my skills and experiences in the field of programming. If you're looking for a creative and dedicated developer, you're in the right place!
 
+![360_F_220487271_ywVxN2Jff7qIsIl4CDbPyEux8xI0tWnh](https://github.com/WV-Wesley-Victor/Portfolio/assets/137107062/afb04904-496c-455e-9496-684734ecc4b7)
 <p align="center">
   <a href="https://wv-wesley-victor.github.io/Portfolio/" target="_blank">Click here to visit my Online Portfolio.</a>
 </p>
