@@ -177,6 +177,10 @@ label.bar {
     left: 0;
 }
 
+.bar span.top {
+    top: 0;
+}
+
 .bar span.middle {
     top: 10px;
 }
