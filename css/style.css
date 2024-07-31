@@ -57,6 +57,7 @@
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    background-color: #c98860;
 }
 
 .background::before {
